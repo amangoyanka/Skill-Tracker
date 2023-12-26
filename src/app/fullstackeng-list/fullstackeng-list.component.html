@@ -1,0 +1,36 @@
+<!-- <p>fullstackeng-list works!</p>
+ -->
+
+
+<h2>Associate List</h2>
+<div class="form-outline col-md-6 offset-md-3">
+    <input type="search" [(ngModel)]="searchtext" class="form-control" aria-label="search" placeholder="Search FullStackEng">
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Associate Id</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Email Id</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let fullstackeng of fullstackengs | filter:searchtext">
+            <td>{{fullstackeng.associateId}}</td>
+            <td>{{fullstackeng.name}}</td>
+            <td>{{fullstackeng.mobileNumber}}</td>
+            <td>{{fullstackeng.email}}</td>
+            <!-- <td>{{fullstackeng.hcj}}</td> -->
+            <td>
+                <button (click)="updateFullstackeng(fullstackeng.id)" class="btn btn-info"> Update</button>
+                <button (click)="deleteFullstackeng(fullstackeng.id)" class="btn btn-danger" style="margin-left: 10px">
+                    Delete</button>
+                    <button (click)="fullstackengDetails(fullstackeng.id)" class="btn btn-danger" style="margin-left: 10px">
+                        View</button>
+
+            </td>
+        </tr>
+    </tbody>
+</table>

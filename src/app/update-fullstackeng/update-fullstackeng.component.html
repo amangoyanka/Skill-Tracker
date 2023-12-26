@@ -1,0 +1,187 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Update FullStackEng for {{fullstackeng.associateId}} </h3>
+    <form [formGroup]="submitForm" (ngSubmit)="onSubmit()">
+
+        <!-- <div class="form-group">
+            <label> Associate Id</label>
+            <input formControlName="aid" type="text" class="form-control" id="associateId" [(ngModel)]="fullstackeng.associateId"
+                name="associateId">
+                <span style="color: red;" *ngIf="aid && aid.invalid && aid.touched"  >this not valid</span>
+
+        </div> -->
+
+        <!-- <div class="form-group">
+            <label> Name</label>
+            <input formControlName="aname" [ngClass]="{'is-invalid':submitted && submitForm.controls['aname'].errors}"
+                type="text" class="form-control" id="name" [(ngModel)]="fullstackeng.name" name="name">
+
+        </div> -->
+        <!-- <div class="form-group">
+                <label> Name</label>
+                <input formControlName="aname" type="text" class="form-control" id="name" [(ngModel)]="fullstackeng.name" name="name">
+                <span style="color: red;" *ngIf="aname && aname.invalid && aname.touched"  >this not valid</span>
+            </div>
+
+            <div class="form-group">
+                <label> Mobile Number</label>
+                <input formControlName="mNumber" type="text" class="form-control" id="mobileNumber" [(ngModel)]="fullstackeng.mobileNumber"
+                    name="mobileNumber">
+                    <span style="color: red;" *ngIf="mNumber && mNumber.invalid && mNumber.touched"  >this not valid</span>
+            </div>
+
+            <div class="form-group">
+                <label> Email Id</label>
+                <input formControlName="email" type="email" class="form-control" id="email" [(ngModel)]="fullstackeng.email" name="email">
+                <span style="color: red;" *ngIf="email && email.invalid && email.touched"  >this not valid</span>
+
+            </div> -->
+        <!-- Skills  -->
+        <div class="form-group">
+            <h5>Technical Skills</h5>
+            <label> HTML-CSS-JAVASCRIPT</label>
+            <input formControlName="hcj" type="hcj" class="form-control" id="hcj" [(ngModel)]="fullstackeng.hcj"
+                name="hcj">
+            <span style="color: red;" *ngIf="hcj && hcj.invalid && hcj.touched">This is not valid</span>
+
+        </div>
+        <br>
+        <div class="form-group">
+            <label> ANGULAR</label>
+            <input formControlName="angular" type="angular" class="form-control" id="angular"
+                [(ngModel)]="fullstackeng.angular" name="angular">
+            <span style="color: red;" *ngIf="angular && angular.invalid && angular.touched">This is not valid</span>
+
+        </div>
+        <br>
+        <div class="form-group">
+            <label> REACT</label>
+            <input formControlName="react" type="react" class="form-control" id="react" [(ngModel)]="fullstackeng.react"
+                name="react">
+            <span style="color: red;" *ngIf="react && react.invalid && react.touched">This is not valid</span>
+
+        </div>
+        <br>
+        <div class="form-group">
+            <label> SPRING</label>
+            <input formControlName="spring" type="spring" class="form-control" id="spring"
+                [(ngModel)]="fullstackeng.spring" name="spring">
+            <span style="color: red;" *ngIf="spring && spring.invalid && spring.touched">This is not valid</span>
+
+        </div>
+        <br>
+        <div class="form-group">
+            <label> RESTFUL</label>
+            <input formControlName="restful" type="restful" class="form-control" id="restful"
+                [(ngModel)]="fullstackeng.restful" name="restful">
+            <span style="color: red;" *ngIf="restful && restful.invalid && restful.touched">This is not valid</span>
+
+        </div>
+        <br>
+        <div class="form-group">
+            <label> HIBERNATE</label>
+            <input formControlName="hibernet" type="hibernet" class="form-control" id="hibernet"
+                [(ngModel)]="fullstackeng.hibernet" name="hibernet">
+            <span style="color: red;" *ngIf="hibernet && hibernet.invalid && hibernet.touched">This is not valid</span>
+
+        </div>
+        <br>
+        <div class="form-group">
+            <label> GIT</label>
+            <input formControlName="git" type="git" class="form-control" id="git" [(ngModel)]="fullstackeng.git"
+                name="git">
+            <span style="color: red;" *ngIf="git && git.invalid && git.touched">This is not valid</span>
+
+        </div>
+        <br>
+        <div class="form-group">
+            <label> DOCKER</label>
+            <input formControlName="docker" type="docker" class="form-control" id="docker"
+                [(ngModel)]="fullstackeng.docker" name="docker">
+            <span style="color: red;" *ngIf="docker && docker.invalid && docker.touched">This is not valid</span>
+        </div>
+        <br>
+        <div class="form-group">
+            <label> JENKINS</label>
+            <input formControlName="jenkins" type="jenkins" class="form-control" id="jenkins"
+                [(ngModel)]="fullstackeng.jenkins" name="jenkins">
+            <span style="color: red;" *ngIf="jenkins && jenkins.invalid && jenkins.touched">This is not valid</span>
+
+        </div>
+        <br>
+        <div class="form-group">
+            <label> AWS</label>
+            <input formControlName="aws" type="aws" class="form-control" id="aws" [(ngModel)]="fullstackeng.aws"
+                name="aws">
+            <span style="color: red;" *ngIf="aws && aws.invalid && aws.touched">This is not valid</span>
+
+        </div>
+        <br>
+        
+        <div class="form-group">
+            <label> SPOKEN</label>
+            <input formControlName="spoken" type="spoken" class="form-control" id="spoken"
+                [(ngModel)]="fullstackeng.spoken" name="spoken">
+            <span style="color: red;" *ngIf="spoken && spoken.invalid && spoken.touched">This is not valid</span>
+
+        </div>
+        <br>
+        
+        <div class="form-group">
+            <label> COMMUNICATION</label>
+            <input formControlName="communication" type="communication" class="form-control" id="communication"
+                [(ngModel)]="fullstackeng.communication" name="communication">
+            <span style="color: red;" *ngIf="communication && communication.invalid && communication.touched">This is
+                not valid</span>
+
+        </div>
+        <br>
+        
+        <div class="form-group">
+            <label> APTITUDE</label>
+            <input formControlName="aptitude" type="aptitude" class="form-control" id="aptitude"
+                [(ngModel)]="fullstackeng.aptitude" name="aptitude">
+            <span style="color: red;" *ngIf="aptitude && aptitude.invalid && aptitude.touched">This is not valid</span>
+
+        </div>
+        <br>
+        <button [disabled]="submitForm.invalid" class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+</div>
+
+
+
+
+
+<!-- <div class="col-md-6 offset-md-3">
+    <h3> Update FullStackEng </h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <label> Associate Id</label>
+            <input type="text" class ="form-control" id = "associateId"
+                [(ngModel)] = "fullstackeng.associateId" name = "associateId">
+        </div>
+        
+        <div class="form-group">
+            <label> Name</label>
+            <input type="text" class ="form-control" id = "name"
+                [(ngModel)] = "fullstackeng.name" name = "name">
+        </div>
+    
+        <div class="form-group">
+            <label> Mobile Number</label>
+            <input type="text" class ="form-control" id = "mobileNumber"
+                [(ngModel)] = "fullstackeng.mobileNumber" name = "mobileNumber">
+        </div>
+    
+        <div class="form-group">
+            <label> Email Id</label>
+            <input type="text" class ="form-control" id = "email"
+                [(ngModel)] = "fullstackeng.email" name = "email">
+        </div>
+        <br>
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> -->
